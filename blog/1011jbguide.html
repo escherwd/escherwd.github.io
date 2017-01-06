@@ -1,0 +1,383 @@
+<html>
+<head>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>escherwd - blog - iOS 10.1.1 Jailbreak Guide</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body style="background-color:#485A64;">
+  
+  <nav>
+    <div class="nav-wrapper blue-grey darken-4">
+      <a href="#" class="brand-logo center white-text"> </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons white-text">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="https://escherwd.github.io" class="white-text">Home</a></li>
+        <li><a href="http://escherwd.github.io/dev" class="white-text">Development</a></li>
+        <li><a href="http://escherwd.github.io/social" class="white-text">Social</a></li>
+        <li  class="active"><a href="http://escherwd.github.io/blog" class="white-text">Blog</a></li>
+      </ul>
+    
+    </div>
+  </nav>
+  <ul class="side-nav" id="mobile-demo" style="transform: translateX(0px);">
+              <li><img  width="100%" height="auto" src="../sitebanner.png" class="center"></li>
+              <li class="center blue-grey-text text-lighten-1"><b>&#10096 escherwd's site, Since 2013 &#10097</b></li>
+              <div class="collection">
+        <a href="https://escherwd.github.io" class="collection-item blue-grey-text text-darken-4">Home</a>
+        <a href="https://escherwd.github.io/dev" class="collection-item blue-grey-text text-darken-4">Development</a>
+        <a href="https://escherwd.github.io/social" class="collection-item blue-grey-text text-darken-4">Social</a>
+        <a href="https://escherwd.github.io/blog" class="collection-item blue-grey-text text-darken-4">Blog</a>
+        
+      </div>
+
+            </ul>
+
+
+      
+    
+  
+
+  <div class="blue-grey darken-2">
+
+    
+<p>
+    <iframe src="../currentalert.html" style="border:none" height="auto" width="100%" scrolling="no"></iframe>
+  </p>
+
+
+
+
+
+<div class="container">
+        <!-- Page Content -->
+
+<div class="row">
+            <div class="col s12 m12 white-text">
+              <h5><b>iOS 10.1.1 Jailbreak Guide</b></h5>
+              <p>This jailbreak is still in beta atm, so be warned. Jailbreak by <a href="https://twitter.com/qwertyoruiopz">Luca Tudesco</a></p>
+              <div class="divider"></div>
+              <p class="blue-grey-text text-lighten-3">
+                  By: Escher WD, originally posted on Jan 5, 2017
+              </p>
+              <p>
+              In this little guide, you can learn how to jailbreak your iPhone, iPod, or iPad running iOS 10.1.1.
+              </p>
+              <p>
+                  -- Navigation --<br>
+                  <a href="https://escherwd.github.io/blog/1011jbguide#prerequisits">Prerequisits</a><br>
+                  <a href="https://escherwd.github.io/blog/1011jbguide#jailbreaking">Jailbreaking</a><br>
+                  <a href="https://escherwd.github.io/blog/1011jbguide#installingtweaks">Installing Tweaks</a><br>
+                  <a href="https://escherwd.github.io/blog/1011jbguide#recommendedtweaks">Recommended Tweaks for a stable jailbreak</a><br>
+                  <a href="https://escherwd.github.io/blog/1011jbguide#fixes">Fixes</a><br>
+                  <a href="https://escherwd.github.io/blog/1011jbguide#redownload">Redownloading mach_portal after 7 days</a><br>
+                  <a href="https://escherwd.github.io/blog/1011jbguide#whencraphitsthefan">When crap hits the fan</a><br>
+                  <a href="https://escherwd.github.io/blog/1011jbguide#resources">Other useful resources</a><br>
+
+
+
+
+                  
+
+            </p>
+              <div class="row section" id="prerequisits">
+              <h5>&bull; Prerequisits</h5>
+              <p>
+                  Just like the iOS 9.3.x jailbreak, this one only works on 64-bit devices, but since this jailbreak is still in beta, only a few devices work. To the right of the phone name is the chip manufacturer, only certain phones with certain chips (listed below) will work. To check what chip you have, you can download <a href="https://appsto.re/us/pTERD.i">Battery Memory System Status Monitor</a> from the App Store. Once it downloads go to the "System" tab and find the code for "Model". If your phone and model number are on the list below, you can jailbreak.
+                  </p>
+                  <p>
+                      iPhone 7 Plus | TSMC | Any<br>
+                      iPhone 7 | TSMC | Any<br>
+                      iPhone 6s Plus | Samsung | N66AP<br>
+                      iPhone 6s | Samsung & TSMC | N71mAP or N71AP<br>
+                      iPhone SE | Samsung | N69uAP<br>
+                      iPad Pro | TSMC | Any
+                      </p>
+                <p>
+                    Now that you know if you have a device that works, you need to check if you are on the right version of iOS. You can check what version you have by opening up settings and going to General &rarr; About. Under the "Version" part in the list, you should have "10.1.1 (14B100)" or "10.1.1 (14B150)", it doesn't matter which one you have. If you are not on this firmware, the signing window closed a while ago, so you cannot downgrade/upgrade to this firmware anymore.
+                </p>
+                <p>
+                    You also must have a Mac or PC running OSX, Windows, or Linux and a valid Apple ID. 
+                </p>
+
+                </div>
+                <div class="row section" id="jailbreaking">
+                <h5>&bull; Jailbreaking</h5>
+                <p>
+                    On your computer, plug in your device with and make sure to close iTunes if you have it open.
+                    </p>
+                    <p>
+                        On any browser, go over to <a href="http://www.cydiaimpactor.com">www.cydiaimpactor.com</a>, and download the latest version of the software for your OS.
+                    </p>
+                    <p>
+                        When it downloads, you can either open it up right away or put in your applications folder then open it up, either way, just make sure you can run the application, because it is very important.
+                    </p>
+                    <p class="blue-grey-text text-lighten-3">
+                        Info: "Cydia Impactor" is a tool by Cydia's own creator, Jay Freeman (Saurik). The tool allows you to install applications outside of the app store by "signing" them with your apple ID. By default, you can install an app that is not in the app store for 7 days before it won't work again. Buying a developer's certificate from Apple signs apps for much longer because they are being used to make apps to go on the app store. I DO NOT reccomend you buy this to lengthen the 7 days before the app stops working, because doing it again is super easy. 
+                    </p>
+                    <p>
+                        Back on the browser, head to <a href="https://yalu.qwertyoruiop.com">yalu.qweryoruiop.com</a> to download the IPA file that will jailbreak your device. use the link that says "mirror (my own) - beta3". If you download beta4-1, it won't work.
+                    </p>
+                    <p>
+                        Drag the .ipa file that you downloaded onto Cydia Impactor, like the video shown below.
+                        </p>
+                    <p>
+                        <video class="responsive-video" controls>
+    <source src="../img/blog/dragonipafile.mp4" type="video/mp4">
+  </video>
+                        </p>
+                        <p>
+                            IMPORTANT! Make sure you have the right device selected when you do this!
+                        </p>
+                        <p>
+                            When the text cell pops up like in the video above and it says "This can be your iTunes e-mail login", enter the email you use for your Apple ID (for noobs: The email you use for the App Store).
+                        </p>
+                        <p>
+                            Then, when it asks for the password, enter the password for the same Apple ID as above (for noobs: the password used for the App Store)
+                        </p>
+                        <p>
+                            On Mac, if it asks for Keychain access make sure to press allow.
+                            </p>
+                        <p>
+                            It will take a minute to install, so be patient. But when it does, you should see an icon similar to the one below.
+                        </p>
+                        <p>
+                            <p class="center">
+                            <img  height="auto" width="50%" src="../img/blog/machportalicon.PNG">
+                        </p>
+                            </p>
+                        <p>
+                            When you try to open it this dialogue will appear: (email and code blurred out)
+                        </p>
+                        <p class="center">
+                            <img  height="auto" width="50%" src="../img/blog/alertscreenshot.PNG">
+                        </p>
+                        <p>
+                            To fix this, go to Settings, and then navigate to General &rarr; Device Management and then click on your email. Then click the blue "Trust" button and you'll be good to go.
+                            </p>
+                            <p>
+                                Back on the home screen, open up the "mach_portal" app and wait until it crashes and you are sent back to the home screen. It might take a sec the first time.
+                                </p>
+                                <p>
+                                    When it crashes, the Cydia icon should appear on the home screen, open it up. (if it crashes keep trying.)
+                                    </p>
+                                    <p>
+                                        Navigate to the "Sources" tab, click "Edit", "Add", and add <a href="http://83.218.67.215/~ijapija00/cydia">http://83.218.67.215/~ijapija00/cydia</a>, or <a href="cydia://url/https://cydia.saurik.com/api/share#?source=http://83.218.67.215/~ijapija00/cydia"> Click here on device your jailbreaking on to add automatically</a> 
+
+                                    </p>
+                                    <p>
+                                        You will find a new item in the sources list with the picture below as its icon.
+                                    </p>
+                                    <p class="center">
+                            <img  height="40r" width="40" src="../img/blog/repoicon.png">
+                        </p>
+                        <p>
+                            Go into the source and find the package labeled "Substrate Fix (iOS 10)"
+                        </p>
+                        <p>
+                            Install the package (for noobs: button in top right corner &rarr; "Confirm")
+                        </p>
+                        <p>
+                            Wait for the package to install, then click "Return to Cydia" when it is done.
+                        </p>
+                        <p>
+                            Go back to the homescreen and open up "Substrate Fix" app. Your phone will restart.
+                        </p>
+                        <p>
+                            Congrats, you're now jailbroken. But to insure the stability and length of your jailbreak keep reading on how to install tweaks safely.
+                        </p>
+                    </div>
+                    <div class="row section" id="installingtweaks">
+                <h5>&bull; Installing Tweaks</h5>
+                <p>
+                    <b class="red-text">Please read before installing tweaks!</b>
+                </p>
+                <p>
+                    Before downloading a tweak, make sure it's compatible with iOS 10. Most app-enhancing tweaks will work, like YouTube++, Instagram++, Phantom Lite, etc...
+                </p>
+                <p>
+                    To find tweaks that are compatible with iOS 10, please see <a href="https://docs.google.com/spreadsheets/d/14e9GB-PNhDJuKI799InVFWrUQc-qn-Wd3zRJHKGkKr0/htmlview#">This spreadsheet</a> on what tweaks have been tested on iOS 10.
+                </p>
+                <p>
+                    <b>Tweaks that aren't compatible can lead to bootloops, being stuck in safe mode, and random crashes!</b>
+                </p>
+                <p>
+                    <br>
+                    When installing tweaks through cydia and respringing using old tweaks, your phone can just blank out, not actually respringing. I would recommend installing the tweak, but when it says "Restart Springboard", close Cydia and open up the "Substrate Fix" app that you used initially.
+                </p>
+                <p>
+
+                </p>
+
+
+                </div>
+
+                <div class="row section" id="recommendedtweaks">
+                <h5>&bull; Recommended tweaks for a stable jailbreak</h5>
+                    <p>
+                        <b>CydiaRespringFix</b><br>
+                        <a class="blue-grey-text text-lighten-3">Repo: <a href="http://gmoran.me/repo/">http://gmoran.me/repo/</a></a><br>
+                        Fixes the respringing in iOS 10, Use this if you don't want to have to use the "Substrate Fix" everytime to respring
+                    <p>
+                        <p>
+                        <b>iCleaner</b><br>
+                        <a class="blue-grey-text text-lighten-3">Repo: <a href="https://ib-soft.net/cydia/beta">https://ib-soft.net/cydia/beta</a></a><br>
+                        A classic tool for removing junk files, managing tweaks, and troubleshooting.
+                    <p>
+                        <p>
+                        <p>
+                        <b>MTerminal & OpenSSH</b><br>
+                        Access to the iOS Terminal, useful for troubleshooting. Use OpenSSH to access root form computer.
+                    <p>
+                </div>
+                <div class="row section" id="fixes">
+                <h5>&bull; Fixes</h5>
+                    <b class="red-text">Cellular issues seem to be a problem for everyone who jailbreaks 10.1.1, read here to fix it!</b>
+                    <p>
+                        <a class="blue-grey-text text-lighten-3">Adopted from <a href="https://www.reddit.com/r/jailbreak/comments/5lj5du/tutorial_how_to_jailbreak_ios_10_with_yalu_beta_3/?st=IXJQK9N2&sh=362f51c6">this reddit post</a></a><br>
+                    </p>
+                    <p>
+                        if you are having issues with accessing internet without WiFi using data, heres the fix.
+                    </p>
+                    <p>
+                        <b>OpenSSH or MTerminal is required for this to work!</b><br>
+                        You can download either of them from Cydia just by searching them. (MTerminal is easiest). If you are using MTerminal your doing this from your phone. If you're using OpenSSH, you're doing this from the computer.
+                    </p>
+                    <p>
+                        1) Open up MTerminal on your phone or a terminal on your computer (on mac's if you go to launchpad on the dock and find the "Utilities" folder, it should be in there.)
+                    </p>
+                    <p>
+                        2) Take note of your IP address if you're using OpenSSH. You can do this by going to Settings &rarr; WiFi, pressing the info button on the WiFi you're currently on, and finding the "IP Address" field.
+                    </p>
+                    <p>
+                        3.1) If your using MTerminal on your phone, put these commands in one by one, hitting enter after each one, and remember to capitalize! After you enter "su", it will ask for password. Enter "alpine" like you see below, but note that the characters wont be visible when you type.
+                    </p>
+                    <p class="blue-grey darken-1">
+                        <code>
+                            su <br>
+alpine <br>
+chmod 777 /var <br>
+chmod 777 /var/mobile <br>
+chmod 777 /var/mobile/Library <br>
+chmod 777 /var/mobile/Library/Preferences reboot 
+                        </code>
+                    </p>
+                    <p>
+                        3.2) If you are using a computer with OpenSSH, put these lines of code in one by one, hitting enter after each one. The same things apply from step 3.1.
+                        </p>
+                        <p class="blue-grey darken-1">
+                        <code>
+                            su <br>
+alpine <br>
+ssh root@(your phone's IP Address) <br>
+chmod 777 /var <br>
+chmod 777 /var/mobile <br>
+chmod 777 /var/mobile/Library <br>
+chmod 777 /var/mobile/Library/Preferences reboot 
+                        </code>
+                    </p>
+                    <p>
+                        4) Once your phone is done rebooting, you are good to go!
+                    </p>
+                </div>
+
+<div class="row section" id="redownload">
+                <h5>&bull; Re-downloading mach_portal after 7 days</h5>
+                    <p>
+                        Like I said earlier, after 7 days, the mach_portal won't work anymore. All you have to do is delete the app and then install it again using Cydia Impactor on your computer. Once you redo this all of your stuff will still be there.
+                    </p>
+                </div>
+
+
+                <div class="row section" id="whencraphitsthefan">
+                <h5>&bull; When crap hits the fan</h5>
+                <p>
+                    My phone made it about a week before it went into a bootloop. Unfortunately, the only way to fix it was to update to iOS 10.2, so here is how you do it so you don't ruin your phone because you don't know how to get out of the loop.
+                </p>
+                <p>
+                    If your phone is taking an unusually long time to restart, plug it in to a charger and make sure its not continually vibrating every 20s or so. If it is, your probably in a bootloop.
+                </p>
+                <p>
+                    Try to force restart your phone by holding the power button and home button together (power and vol down for iPhone 7/7+), at the same time for ten seconds. If it keeps doing what it did before after you do this, you landed where I was.
+                </p>
+                <p>
+                    On a Mac or a PC, download ReiBoot (<a href="http://www.tenorshare.com/products/reiboot-mac.html">mac</a> - <a href="http://www.tenorshare.com/products/reiboot.html">pc</a>)
+                </p>
+                <p>
+                    Open the app with your phone plugged into the computer, and click the "Enter recovery mode" option.
+                </p>
+                <p>
+                    When you see a screen similar to the one below, open up iTunes.
+                </p>
+                <p class="center">
+                <img  height="auto" width="75%" src="http://i1-news.softpedia-static.com/images/news2/ios-10-update-pushes-iphones-into-recovery-mode-508263-2.jpg">
+                </p>
+                <p>Once you open iTunes, you should get this:</p>
+                <p class="center"> 
+                    <img  height="auto" width="75%" src="../img/blog/itunesalertshot.png">
+                </p>
+                <p>
+                    <b>If you click "Restore": </b>Everything on your phone is erased, and it will still update to the newest firmware 
+                <p>
+                <p>
+                    <b>If you click "Update": </b>You phone updates to the newest iOS just like it wood normally, keeping all of your data.
+                </p>
+                <p>
+                    <br>
+                    If this happens to you, unfortunately don't get your hopes up about a 10.2 jailbreak anytime soon, but don't bug @qwertyoruiop about it.
+                    <div class="center"> 
+                    <img  height="auto" width="65%" src="../img/blog/qwertytweet1.png">
+                </div>
+                </p>
+            </div>
+            <div class="row section" id="resources">
+                <h5>&bull; Other useful resources</h5>
+                    <p>
+                        <a href="https://reddit.com/r/jailbreak">r/jailbreak</a>
+                    </p>
+                    <p>
+                        <a href="https://docs.google.com/spreadsheets/d/14e9GB-PNhDJuKI799InVFWrUQc-qn-Wd3zRJHKGkKr0/htmlview#">iOS 10 Compatibility list</a>
+                    </p>
+                    <p>
+                        <a href="twitter.com/qwertyoruiopz">@qwertyoruiop on Twitter</a>
+                    </p>
+                    <p>
+                        <a href="https://yalu.qwertyoruiop.com">Yalu jailbreak site</a>
+                    </p>
+                </div>
+                <div class="row section" id="resources">
+                <p>
+                Thank you for reading and <i>please</i> be careful with this jailbreak. I don't take responsibilty for you messing up your phone.
+                </p>
+                </div>
+            </div>
+            
+
+  
+            
+         
+
+        <div class="row">
+            <div class="col s12 m12 white-text">
+             <div class="divider"></div> 
+              <p>
+
+                <div class="col s12 m12 blue-grey-text">
+                  &copy Escher WD 2017 
+                           </div>
+                           </p>
+      </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/init.js"></script>
+</body>
+</html>
