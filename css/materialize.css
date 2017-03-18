@@ -8,11 +8,16 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    max-width: 720px;
+    margin: 0 auto !important;
+    float: none !important;
   }
 
   main {
     flex: 1 0 auto;
   }
+
+
 
 .materialize-red {
   background-color: #e51c23 !important;
