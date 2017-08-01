@@ -1,10 +1,211 @@
 {
-  "pages" : [
-    {
-      "pageNumber" : "1"
+ "kind": "youtube#playlistItemListResponse",
+ "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/vhll2OJkm-O6_iVCZJ3oK7gVeTg\"",
+ "nextPageToken": "CAUQAA",
+ "pageInfo": {
+  "totalResults": 76,
+  "resultsPerPage": 5
+ },
+ "items": [
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/u5OZHyNDWl2ttpOhvrOSi_MMy74\"",
+   "id": "VVVNMlE2a3VGYWtzTjhIa1h0U0YyMW9nLmwyUVRJNndwQ3RJ",
+   "snippet": {
+    "publishedAt": "2017-06-12T22:11:03.000Z",
+    "channelId": "UCM2Q6kuFaksN8HkXtSF21og",
+    "title": "RGMS News S03E32",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/l2QTI6wpCtI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/l2QTI6wpCtI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/l2QTI6wpCtI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/l2QTI6wpCtI/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
     },
-    {
-      "pageNumber" : "2"
+    "channelTitle": "RGMS News",
+    "playlistId": "UUM2Q6kuFaksN8HkXtSF21og",
+    "position": 0,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "l2QTI6wpCtI"
     }
-  ]
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/ZrrBjPZG6PY2DklsR3ErMwNSiqI\"",
+   "id": "VVVNMlE2a3VGYWtzTjhIa1h0U0YyMW9nLjh0VnVjV2RYcVlJ",
+   "snippet": {
+    "publishedAt": "2017-06-05T16:02:31.000Z",
+    "channelId": "UCM2Q6kuFaksN8HkXtSF21og",
+    "title": "RGMS News S03E31",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/8tVucWdXqYI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/8tVucWdXqYI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/8tVucWdXqYI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/8tVucWdXqYI/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "RGMS News",
+    "playlistId": "UUM2Q6kuFaksN8HkXtSF21og",
+    "position": 1,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "8tVucWdXqYI"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/P0IJbNR_GC7a8ykYuwA1mGbhMro\"",
+   "id": "VVVNMlE2a3VGYWtzTjhIa1h0U0YyMW9nLnlWeFQ3c2ZndlZV",
+   "snippet": {
+    "publishedAt": "2017-05-31T03:34:14.000Z",
+    "channelId": "UCM2Q6kuFaksN8HkXtSF21og",
+    "title": "RGMS News S03E30",
+    "description": "To see all episodes of Hypothetical, go to: hypotheticals.rgms.org\n\nTo see the The Old Lady Chronicles Episode #2 go here: https://www.youtube.com/watch?v=UydMjG_KzyU",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/yVxT7sfgvVU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/yVxT7sfgvVU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/yVxT7sfgvVU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/yVxT7sfgvVU/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "RGMS News",
+    "playlistId": "UUM2Q6kuFaksN8HkXtSF21og",
+    "position": 2,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "yVxT7sfgvVU"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/xgLq6LiFFQemXTgptPLp6axU-ls\"",
+   "id": "VVVNMlE2a3VGYWtzTjhIa1h0U0YyMW9nLm5uSnpGdGxGMjVR",
+   "snippet": {
+    "publishedAt": "2017-05-20T17:28:32.000Z",
+    "channelId": "UCM2Q6kuFaksN8HkXtSF21og",
+    "title": "RGMS News S03E29",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/nnJzFtlF25Q/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/nnJzFtlF25Q/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/nnJzFtlF25Q/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/nnJzFtlF25Q/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "RGMS News",
+    "playlistId": "UUM2Q6kuFaksN8HkXtSF21og",
+    "position": 3,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "nnJzFtlF25Q"
+    }
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "\"m2yskBQFythfE4irbTIeOgYYfBU/78EuIs5ohGXd62vgH27ui7X3r6U\"",
+   "id": "VVVNMlE2a3VGYWtzTjhIa1h0U0YyMW9nLjNXVEQ1RVRNVVBV",
+   "snippet": {
+    "publishedAt": "2017-05-14T16:34:55.000Z",
+    "channelId": "UCM2Q6kuFaksN8HkXtSF21og",
+    "title": "RGMS News S03E28",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/3WTD5ETMUPU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/3WTD5ETMUPU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/3WTD5ETMUPU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/3WTD5ETMUPU/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "RGMS News",
+    "playlistId": "UUM2Q6kuFaksN8HkXtSF21og",
+    "position": 4,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "3WTD5ETMUPU"
+    }
+   }
+  }
+ ]
 }
