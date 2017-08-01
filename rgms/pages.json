@@ -3,19 +3,19 @@
   "pages": [
     {
       "img": "https://escherwd.github.io/rgms/slides/slide1half.png",
-      "header": "https://escherwd.github.io/rgms/header/header1half.png"
+      "header": "https://escherwd.github.io/rgms/headers/header1half.png"
     },
     {
       "img": "https://escherwd.github.io/rgms/slides/slide2half.png",
-      "header": "https://escherwd.github.io/rgms/header/header2half.png"
+      "header": "https://escherwd.github.io/rgms/headers/header2half.png"
     },
     {
       "img": "https://escherwd.github.io/rgms/slides/slide3half.png",
-      "header": "https://escherwd.github.io/rgms/header/header3half.png"
+      "header": "https://escherwd.github.io/rgms/headers/header3half.png"
     },
     {
       "img": "https://escherwd.github.io/rgms/slides/slide4half.png",
-      "header": "https://escherwd.github.io/rgms/header/header4half.png"
+      "header": "https://escherwd.github.io/rgms/headers/header4half.png"
     }
   ]
 }
