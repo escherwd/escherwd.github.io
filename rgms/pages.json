@@ -1,10 +1,17 @@
 {
   "pages": [
     {
-      "pageNumber": "1"
+      "img": "https://escherwd.github.io/rgms/slides/slide1.png"
     },
     {
-      "pageNumber": "2"
+      "img": "https://escherwd.github.io/rgms/slides/slide1.png"
+    },
+    {
+      "img": "https://escherwd.github.io/rgms/slides/slide1.png"
+    },
+    {
+      "img": "https://escherwd.github.io/rgms/slides/slide1.png"
     }
   ]
+  "numberOfSlides": 4
 }
