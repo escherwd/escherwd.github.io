@@ -1,1 +1,10 @@
-hello
+{
+  "pages" : [
+    {
+      "pageNumber" : "1"
+    },
+    {
+      "pageNumber" : "2"
+    }
+  ]
+}
