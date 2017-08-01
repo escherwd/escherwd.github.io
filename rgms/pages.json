@@ -1,4 +1,5 @@
 {
+  "numberOfSlides": 4
   "pages": [
     {
       "img": "https://escherwd.github.io/rgms/slides/slide1.png"
@@ -13,5 +14,4 @@
       "img": "https://escherwd.github.io/rgms/slides/slide1.png"
     }
   ]
-  "numberOfSlides": 4
 }
