@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RGMS News</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="RGMS News">
+    <meta name="apple-mobile-web-app-title" content="RGMS News">
+    <meta name="theme-color" content="$ff2d55">
+    <meta name="msapplication-navbutton-color" content="$ff2d55">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-starturl" content="/">
+    <link rel="apple-touch-icon" href="img/icon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <link href="css/ratchet-theme-ios.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <!-- <script src="js/ratchet.js"></script> -->
+    <script src="main.js"></script>
+</head>
+
+<body style="background-color:#F7F7F7;">
+
+
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <h1 class="title">RGMS News</h1>
+        <a class="icon pull-left">
+            <img name="loader" style="visibility:hidden" src="img/loading.gif" width=24 height=24></img>
+        </a>
+    </header>
+
+    <div class="content" style="visibility:hidden;" name="siteContent">
+        <div class="content-padded" style="text-align: center">
+            <br>
+            <h3>Welcome to the New RGMS News App</h3>
+            <p>To get started, add this website to your home screen on your iPhone, iPad, or iPod.</p>
+        </div>
+        <img src="img/addToHome.png" style="display: block;margin-left: auto;margin-right: auto;max-width:375px;" width=100%>
+    </div>
+
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content" style="visibility: visible;" name="actualContent" id="all">
+        <img src="img/banner.png" style="display: block;margin-left: auto;margin-right: auto;max-width: 375px;" width=100%>
+        <div class="content-padded">
+            <p>Reingineered from the ground up, the new RGMS News Web App is faster, sturdier, and more robust.</p>
+            <br>
+            <h4>Discover</h4>
+        </div>
+
+        <div class="card">
+            <ul class="table-view">
+                <li class="table-view-cell media">
+                    <a onclick="loadFile('discover.html')" class="navigate-right">
+                        <span class="badge">
+                            <strong>New!</strong>
+                        </span>
+                        <span class="media-object pull-left icon icon-star-filled"></span>
+                        <div class="media-body" id="allVids">
+                            Discover
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <h5 style="text-align:center;" name="loadingIndicator">LOADING...</h5>
+        <h4 class="content-padded">All Episodes</h4>
+        <ul class="table-view" name="videoList">
+
+        </ul>
+        <div class="content-padded">
+            <button onclick="loadVideos(nextPageToken);" name="loadMore" class="btn btn-block btn-outlined">
+                Load More
+            </button>
+        </div>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+    <nav class="bar bar-tab" name="bar" style="visibility: visible;">
+        <a class="tab-item active" style="color:#ff3b30" onclick="loadFile('index.html')">
+            <span class="icon icon-home"></span>
+            <span class="tab-label">Home</span>
+        </a>
+        <a class="tab-item" onclick="loadFile('discover.html')">
+            <span class="icon icon-star-filled"></span>
+            <span class="tab-label">Discover</span>
+        </a>
+        <a class="tab-item" onclick="loadFile('search.html')">
+            <span class="icon icon-search"></span>
+            <span class="tab-label">Search</span>
+        </a>
+        <a class="tab-item" onclick="loadFile('settings.html')">
+            <span class="icon icon-gear"></span>
+            <span class="tab-label">Settings</span>
+        </a>
+    </nav>
+
+
+    <script>
+        if (window.navigator.standalone == true && navigator.userAgent.indexOf("Safari") != -1) {
+            console.log("in web app");
+            loadVideos()
+        } else {
+            console.log("not in web app")
+            document.getElementsByName("siteContent")[0].style = "visibility:visible;"
+            document.getElementsByName("actualContent")[0].style = "visibility:hidden;"
+            document.getElementsByName("bar")[0].style = "visibility:hidden;"
+        }
+        function loadID(id) {
+            document.getElementsByName("loader")[0].style = "visibility:visible"
+            var url = "watch.html?id=" + id + "&from=index"
+            window.open(url, "_self");
+        }
+
+        
+    </script>
+
+
+
+</body>
+
+</html>

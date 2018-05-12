@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RGMS News - Featured List</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <link href="css/ratchet-theme-ios.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <!-- <script src="js/ratchetPro.js"></script> -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <button onclick="goBack();" class="btn btn-link btn-nav pull-left" style="color:#ff3b30">
+            <span class="icon icon-left-nav"></span>
+        </button>
+        <a class="icon pull-right">
+            <img name="loader" style="visibility:hidden" src="img/loading.gif" width=24 height=24></img>
+        </a>
+        <h1 name="title" class="title">Featured List</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <ul class="table-view" name="featuredList">
+
+        </ul>
+    </div>
+
+    </div>
+
+    <script>
+        function goBack() {
+            window.open("discover.html", "_self");
+        }
+        function loadID(id) {
+            var listID = getParameterByName("list")
+            document.getElementsByName("loader")[0].style = "visibility:visible"
+            var url = "watch.html?id=" + id + "&from=list.html?list="+listID
+            window.open(url, "_self");
+        }
+        function getFeatures() {
+            var index = getParameterByName("list")
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var jsonReponse = JSON.parse(this.responseText);
+                    var name = jsonReponse.items[index].name
+                    document.getElementsByName("title")[0].innerText = name
+                    var idList = jsonReponse.items[index].ids.replaceAll(" ",",")
+                    getVideos(idList)
+                }
+            };
+            xmlhttp.open("GET", "features.json");
+            xmlhttp.send();
+        }
+        getFeatures();
+        function getVideos(list) {
+            if (list != null) {
+                var url = "https://www.googleapis.com/youtube/v3/videos?part=snippet&id=" + list + "&key=" + apiKey
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var jsonReponse = JSON.parse(this.responseText);
+                        for (itemIndex in jsonReponse.items) {
+                            var item = jsonReponse.items[itemIndex]
+                            var date = parseDate(item.snippet.publishedAt)
+                            var body = "Uploaded: " + date[0] + "/" + date[1] + "/" + date[2] + "<br>"
+                            var titleArray = parseTitle(item.snippet.title)
+                            var title = titleArray[0]
+                            if (titleArray.length > 1) {
+                                body = "<strong> " + titleArray[1] + "</strong><br>" + body
+                            }
+                            //They screwed up their title somehow
+                            if (date[1] == 27 && date[0] == 4 && date[2] == 2018 && title == "RGMS News") {
+                                body = "<strong> Season 4 </strong><br>" + body
+                                title = "Episode 29-F"
+                            }
+                            var listItem = listItemTemplate.replace("#TITLE#", title).replace("#BODY#", body).replace("#THUMB#", item.snippet.thumbnails.medium.url).replace("#ID#", item.id);
+                            document.getElementsByName("featuredList")[0].innerHTML += listItem
+                            document.getElementsByName("loader")[0].style = "visibility:hidden"
+                        }
+                    }
+                };
+                xmlhttp.open("GET", url);
+                xmlhttp.send();
+            } else {
+                document.getElementsByName("loader")[0].style = "visibility:hidden"
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

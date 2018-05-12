@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RGMS News - Settings</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="RGMS News">
+    <meta name="apple-mobile-web-app-title" content="RGMS News">
+    <meta name="theme-color" content="$ff2d55">
+    <meta name="msapplication-navbutton-color" content="$ff2d55">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-starturl" content="/">
+    <link rel="apple-touch-icon" href="img/icon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <link href="css/ratchet-theme-ios.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="js/ratchet.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body style="background-color:#F7F7F7;">
+
+
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <h1 class="title">Settings</h1>
+        <a class="icon pull-left">
+            <img name="loader" style="visibility:hidden" src="img/loading.gif" width=24 height=24></img>
+        </a>
+    </header>
+
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content" id="all">
+        <div class="content-padded" style="text-align: center">
+            <h6>THE UNOFFICIAL</h6>
+            <h2>RGMS News App</h2>
+            <p>By escherwd</p>
+        </div>
+        <br>
+        <div class="content-padded">
+            <h4>Data</h4>
+        </div>
+        <ul class="table-view">
+            <li class="table-view-cell">Clear Watch History
+                <button onclick="clearHistory()" class="btn btn-negative">Clear</button>
+            </li>
+        </ul>
+        <div class="content-padded">
+            <h4>Discover</h4>
+        </div>
+        <ul class="table-view">
+            <ul class="table-view">
+                <li class="table-view-cell">
+                    Latest Episode
+                    <div name="latestEpisode" onclick="toggleLatestEpisode();" class="toggle active">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>
+                <li class="table-view-cell">
+                    Current Poll
+                    <div name="currentPoll" onclick="toggleCurrentPoll();" class="toggle active">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>
+                <li class="table-view-cell">
+                    Watch History
+                    <div name="watchHistory" onclick="toggleWatchHistory();" class="toggle active">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>
+            </ul>
+        </ul>
+        <div class="content-padded">
+                <h4>Support</h4>
+            </div>
+            <ul class="table-view">
+                    <li class="table-view-cell media">
+                      <a class="navigate-right" href="https://news.rgms.org">
+                        <span class="media-object pull-left icon icon-play"></span>
+                        <div class="media-body">
+                          RGMS News on YouTube
+                        </div>
+                      </a>
+                    </li>
+                    <li class="table-view-cell media">
+                      <a class="navigate-right" href="https://escherwd.me">
+                        <span class="media-object pull-left icon icon-person"></span>
+                        <div class="media-body">
+                          escherwd.me
+                        </div>
+                      </a>
+                    </li>
+                    <li class="table-view-cell media">
+                      <a class="navigate-right" href="mailto:me@escherwd.me">
+                        <span class="media-object pull-left icon icon-edit"></span>
+                        <div class="media-body">
+                          me@escherwd.me
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <br><br>
+    </div>
+
+    <nav class="bar bar-tab">
+        <a class="tab-item" onclick="loadFile('index.html')">
+            <span class="icon icon-home"></span>
+            <span class="tab-label">Home</span>
+        </a>
+        <a class="tab-item" onclick="loadFile('discover.html')">
+            <span class="icon icon-star-filled"></span>
+            <span class="tab-label">Discover</span>
+        </a>
+        <a class="tab-item" onclick="loadFile('search.html')">
+            <span class="icon icon-search"></span>
+            <span class="tab-label">Search</span>
+        </a>
+        <a class="tab-item active" style="color:#ff3b30" onclick="loadFile('settings.html')">
+            <span class="icon icon-gear"></span>
+            <span class="tab-label">Settings</span>
+        </a>
+    </nav>
+
+    <script>
+        function loadID(id) {
+            document.getElementsByName("loader")[0].style = "visibility:visible"
+            var url = "watch.html?id=" + id + "&from=settings"
+            window.open(url, "_self");
+        }
+        function toggleLatestEpisode() {
+            if (localStorage.getItem("latestEpisodeDisabled") == null || localStorage.getItem("latestEpisodeDisabled") == "false") {
+                // latestEpisode is enabled, visible on discover tab
+                localStorage.setItem("latestEpisodeDisabled","true")
+            } else {
+                // latestEpisode is disabled, invisible on discover tab
+                localStorage.setItem("latestEpisodeDisabled","false")
+            }
+        }
+        function toggleCurrentPoll() {
+            if (localStorage.getItem("currentPollDisabled") == null || localStorage.getItem("currentPollDisabled") == "false") {
+                // currentPoll is enabled, visible on discover tab
+                localStorage.setItem("currentPollDisabled","true")
+            } else {
+                // currentPoll is disabled, invisible on discover tab
+                localStorage.setItem("currentPollDisabled","false")
+            }
+        }
+        function toggleWatchHistory() {
+            if (localStorage.getItem("watchHistoryDisabled") == null || localStorage.getItem("watchHistoryDisabled") == "false") {
+                // watchHistory is enabled, visible on discover tab
+                localStorage.setItem("watchHistoryDisabled","true")
+            } else {
+                // watchHistory is disabled, invisible on discover tab
+                localStorage.setItem("watchHistoryDisabled","false")
+            }
+        }
+        function determineToggles() {
+            if (localStorage.getItem("latestEpisodeDisabled") == null || localStorage.getItem("latestEpisodeDisabled") == "false") {
+                // latestEpisode is enabled, visible on discover tab
+                document.getElementsByName("latestEpisode")[0].className = "toggle active"
+            } else {
+                // latestEpisode is disabled, invisible on discover tab
+                document.getElementsByName("latestEpisode")[0].className = "toggle"
+            }
+            if (localStorage.getItem("currentPollDisabled") == null || localStorage.getItem("currentPollDisabled") == "false") {
+                // currentPoll is enabled, visible on discover tab
+                document.getElementsByName("currentPoll")[0].className = "toggle active"
+            } else {
+                // currentPoll is disabled, invisible on discover tab
+                document.getElementsByName("currentPoll")[0].className = "toggle"
+            }
+            if (localStorage.getItem("watchHistoryDisabled") == null || localStorage.getItem("watchHistoryDisabled") == "false") {
+                // watchHistory is enabled, visible on discover tab
+                document.getElementsByName("watchHistory")[0].className = "toggle active"
+            } else {
+                // watchHistory is disabled, invisible on discover tab
+                document.getElementsByName("watchHistory")[0].className = "toggle"
+            }
+        }
+        determineToggles()
+        function clearHistory() {
+            localStorage.removeItem("recents")
+            alert("✓ Succesfully cleared watch history.")
+        }
+    </script>
+
+
+
+</body>
+
+</html>

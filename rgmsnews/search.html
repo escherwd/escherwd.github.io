@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RGMS News - Search</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="RGMS News">
+    <meta name="apple-mobile-web-app-title" content="RGMS News">
+    <meta name="theme-color" content="$ff2d55">
+    <meta name="msapplication-navbutton-color" content="$ff2d55">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-starturl" content="/">
+    <link rel="apple-touch-icon" href="img/icon.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <link href="css/ratchet-theme-ios.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <!-- <script src="js/ratchet.js"></script> -->
+    <script src="main.js"></script>
+    <script src="search.js"></script>
+</head>
+
+<body style="background-color:#F7F7F7;">
+
+
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <h1 class="title">Search</h1>
+        <a class="icon pull-left"><img name="loader" style="visibility:hidden" src="img/loading.gif" width=24 height=24></img></a>
+    </header>
+
+    <div class="bar bar-standard bar-header-secondary">
+        <input onkeydown="if (event.keyCode == 13) { searchFor(document.getElementsByName('searchbar')[0].value) }" name="searchbar" type="search"  placeholder="Search RGMS News">
+    </div>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+            <div class="content-padded" name="resultsHeader" style="visibility: hidden;">
+                    <h4>YouTube Search Results</h4>
+                </div>
+       <div class="table-view" name="searchList">
+            <li class="table-view-cell">Use the search bar above to find some 🔥 content.</li>
+       </div>
+       <br><br>
+    </div>
+
+    <nav class="bar bar-tab">
+            <a class="tab-item" onclick="loadFile('index.html')">
+                <span class="icon icon-home"></span>
+                <span class="tab-label">Home</span>
+            </a>
+            <a class="tab-item" onclick="loadFile('discover.html')">
+                <span class="icon icon-star-filled"></span>
+                <span class="tab-label">Discover</span>
+            </a>
+            <a class="tab-item active" style="color:#ff3b30" onclick="loadFile('search.html')">
+                <span class="icon icon-search"></span>
+                <span class="tab-label">Search</span>
+            </a>
+            <a class="tab-item" onclick="loadFile('settings.html')">
+                <span class="icon icon-gear"></span>
+                <span class="tab-label">Settings</span>
+            </a>
+        </nav>
+
+    <script>
+        document.getElementsByName("searchbar")[0].focus()
+        function loadID(id) {
+            document.getElementsByName("loader")[0].style = "visibility:visible"
+            var url = "watch.html?id="+id+"&from=search"
+            window.open(url,"_self");
+        }
+    </script>
+
+
+
+</body>
+
+</html>

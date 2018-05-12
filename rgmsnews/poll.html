@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RGMS News - Poll</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="css/ratchet.css" rel="stylesheet">
+
+    <link href="css/ratchet-theme-ios.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <!-- <script src="js/ratchetPro.js"></script> -->
+    <script src="main.js"></script>
+</head>
+
+<body>
+
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <button onclick="goBack();" class="btn btn-link btn-nav pull-left" style="color:#ff3b30">
+            <span class="icon icon-left-nav"></span>
+            Back
+        </button>
+        <a class="icon pull-right"><img name="loader" style="visibility:hidden" src="img/loading.gif" width=24 height=24></img></a>
+        <h1 class="title">Current Poll</h1>
+    </header>
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <a width=100% height=100% name="iframeDiv">
+                
+        </a>
+        
+    </div>
+
+    <script>
+        var pollUrl = getParameterByName("url")
+        var iframeTemplate = "<iframe src='"+pollUrl+"' frameborder='0' height=100% width=100%></iframe>"
+        document.getElementsByName("iframeDiv")[0].innerHTML = iframeTemplate
+        function goBack() {
+            window.open("discover.html","_self");
+        }
+        function loadID(id) {
+            var redirectedFrom = getParameterByName("from") 
+            if (redirectedFrom == null) {
+                redirectedFrom = "index"
+            }
+            document.getElementsByName("loader")[0].style = "visibility:visible"
+            var url = "watch.html?id="+id+"&from="+redirectedFrom
+            window.open(url,"_self");
+        }
+    </script>
+
+
+
+</body>
+
+</html>

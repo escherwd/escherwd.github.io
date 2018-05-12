@@ -1,0 +1,8 @@
+{
+  "name": "RGMS News App",
+  "short_name": "RGMS News",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "$ff2d55"
+}
