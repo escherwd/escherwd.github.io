@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>escherwd</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  </head>
-  <body>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>escherwd</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <style type="text/css">
+    @-webkit-keyframes Animation {
+      0% {
+        background-position: 0% 50%
+      }
+      50% {
+        background-position: 100% 50%
+      }
+      100% {
+        background-position: 0% 50%
+      }
+    }
 
+    @-moz-keyframes Animation {
+      0% {
+        background-position: 0% 50%
+      }
+      50% {
+        background-position: 100% 50%
+      }
+      100% {
+        background-position: 0% 50%
+      }
+    }
 
-    <section class="hero is-fullheight is-info is-bold">
+    @keyframes Animation {
+      0% {
+        background-position: 0% 50%
+      }
+      50% {
+        background-position: 100% 50%
+      }
+      100% {
+        background-position: 0% 50%
+      }
+    }
 
-    <div class="hero-body">
+    body {
+      background: url("img/bg.jpg") no-repeat center fixed;
+      background-size:cover;
+      -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <section style="opacity: 0.8;" class="hero is-fullheight is-info is-bold">
+    <div class="hero-body" style="background: linear-gradient(45deg, #EFEA9B, #E27E8A, #A487BA,#53599C,#1D232E) 0% 0% / 300% 300%; animation: Animation 25s ease infinite;">
       <div class="container has-text-centered">
         <h1 class="title" title="@escherwd on snapchat">
           <img src="img/escherwdWhite.png" alt="Bulma: a modern CSS framework based on Flexbox" width="222" height="37">
@@ -22,12 +66,36 @@
           <nav class="tabs is-small is-centered">
             <div class="container">
               <ul>
-                <li><a href="https://escherwd.github.io/apps" title="Apps"><i class="fab fa-lg fa-app-store-ios"></i></a></li>
-                <li><a href="https://instagram.com/escherwd" title="Instagram"><i class="fab fa-lg fa-instagram"></i></a></li>
-                <li><a href="https://soundcloud.com/escherwd" title="SoundCloud"><i class="fab fa-lg fa-soundcloud"></i></a></li>
-                <li><a href="https://itunes.apple.com/profile/escherwd" title="Apple Music"><i class="fab fa-lg fa-itunes"></i></a></li>
-                <li><a href="https://bandcamp.com/escherwd" title="Bandcamp"><i class="fab fa-lg fa-bandcamp"></i></a></li>
-                <li><a href="mailto:escherwd@yahoo.com" title="Email"><i class="fas fa-lg fa-envelope"></i></a></li>
+                <li>
+                  <a href="https://escherwd.github.io/apps" title="Apps">
+                    <i class="fab fa-lg fa-app-store-ios"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/escherwd" title="Instagram">
+                    <i class="fab fa-lg fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://soundcloud.com/escherwd" title="SoundCloud">
+                    <i class="fab fa-lg fa-soundcloud"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://itunes.apple.com/profile/escherwd" title="Apple Music">
+                    <i class="fab fa-lg fa-itunes"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://bandcamp.com/escherwd" title="Bandcamp">
+                    <i class="fab fa-lg fa-bandcamp"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:escherwd@yahoo.com" title="Email">
+                    <i class="fas fa-lg fa-envelope"></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
@@ -37,12 +105,13 @@
 
     <div class="hero-foot">
 
-      </div>
+    </div>
 
   </section>
 
 
 
 
-  </body>
+</body>
+
 </html>
