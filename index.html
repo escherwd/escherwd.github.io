@@ -46,17 +46,27 @@
 
     body {
       background-color: #A487BA;
-      background-size:cover;
+      background-size: cover;
       -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
   <section class="hero is-fullheight is-info is-bold">
+      <article id="message" style="position:absolute;margin-right: 10pt;margin-top: 10pt;margin-left: 10pt;width: calc(100% - 20pt);" class="message is-info">
+          <div class="message-header">
+            <p><strong>New on escherwd.me</strong></p>
+            <button class="delete" aria-label="delete" onclick="document.getElementById('message').setAttribute('class','message is-info is-hidden')"></button>
+          </div>
+          <div class="message-body">
+            escherTalks v2 is here. Create your account today. <a href="https://escherwd.github.io/escherTalks/">Go →</a>
+          </div>
+        </article>
     <div class="hero-body" style="background: linear-gradient(45deg, #EFEA9B, #E27E8A, #A487BA,#53599C,#1D232E) 0% 0% / 300% 300%; animation: Animation 25s ease infinite;">
       <div class="container has-text-centered">
         <h1 class="title" title="@escherwd on snapchat">
@@ -103,13 +113,9 @@
       </div>
     </div>
 
-    <div class="hero-foot">
-
-    </div>
-
   </section>
 
-
+</div>
 
 
 </body>
