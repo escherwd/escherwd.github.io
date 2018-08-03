@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <title>GlowUp Group</title>
+</head>
+
+<body>
+    <section class="section" align='center'>
+        <div class="container">
+            <h2 class="title">
+                #GlowUp Group
+            </h2>
+            <p class="subtitle">
+                Server Manager
+            </p>
+            <hr>
+            <span class="title is-size-5">Current Status</span>
+            <br>
+            <br>
+            <article id='tile' class="tile notification">
+                <p id='status'>Loading</p>
+            </article>
+            <br>
+            <a class="button is-success" id='start' onclick='start();' disabled>Start Server</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>#GlowUp Group Server Manager</strong> by
+                <a href="https://escherwd.github.io">Escher WD</a>. The source code is under an
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a> license.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyCnuuzQrfM1Ti9opN5ZUbzq2tAlzTKJhFw",
+            authDomain: "glowupserver.firebaseapp.com",
+            databaseURL: "https://glowupserver.firebaseio.com",
+            projectId: "glowupserver",
+            storageBucket: "glowupserver.appspot.com",
+            messagingSenderId: "461766237265"
+        };
+        firebase.initializeApp(config);
+        var database = firebase.database();
+        //Variables
+        var status
+        var lastStartRequest
+        var lastStart
+        database.ref().on('value', function (snapshot) {
+            //Will update any time the database updates.
+            status = snapshot.val().status
+            lastStartRequest = snapshot.val().lastStartRequest
+            lastStart = snapshot.val().lastStart
+            //Statuses are offline, queueing, online, loading.
+            console.log('Got status: ' + status)
+            if (status == 'offline') {
+                $('#tile').attr('class', 'tile notification is-danger')
+                $('#status').text('Server is Offline')
+                $('#start').removeAttr('disabled')
+            } else if (status == 'loading') {
+                $('#tile').attr('class', 'tile notification')
+                $('#status').text('Server is Loading...')
+                $('#start').attr('disabled', 'disabled')
+            } else if (status == 'queueing') {
+                $('#tile').attr('class', 'tile notification is-warning')
+                $('#start').attr('disabled', 'disabled')
+                if (snapshot.val().percentage) {
+                    var percentage = 100 - snapshot.val().percentage
+                    $('#status').text('Queueing... (' + percentage + '%)')
+                } else {
+                    $('#status').text('Queueing...')
+                }
+            } else if (status == 'online') {
+                $('#tile').attr('class', 'tile notification is-success')
+                $('#status').text('Server is Online')
+                $('#start').attr('disabled', 'disabled')
+            }
+        });
+        //Start Function
+        function start() {
+            var d = new Date();
+            database.ref().set({
+                lastStart: lastStart,
+                lastStartRequest: d.getTime(),
+                status: status,
+                percentage: null
+            }, function (error) {
+                if (error) {
+                    alert('An error occurred and the server could not be started')
+                } else {
+                    // Set Succesful.
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
