@@ -6,15 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>escherwd</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-tooltip.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <style type="text/css">
     @-webkit-keyframes Animation {
       0% {
         background-position: 0% 50%
       }
+
       50% {
         background-position: 100% 50%
       }
+
       100% {
         background-position: 0% 50%
       }
@@ -24,9 +27,11 @@
       0% {
         background-position: 0% 50%
       }
+
       50% {
         background-position: 100% 50%
       }
+
       100% {
         background-position: 0% 50%
       }
@@ -36,48 +41,59 @@
       0% {
         background-position: 0% 50%
       }
+
       50% {
         background-position: 100% 50%
       }
+
       100% {
         background-position: 0% 50%
       }
     }
 
     body {
-      background-color: #A487BA;
+      background-image: url('img/bg2.gif');
+      background-color: #1e1e1e;
       background-size: cover;
+      background-position: top;
+      background-attachment: fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      background-size: cover;
+    }
+
+    .hoveri {
+      width:100%;
+      opacity:0.5;
+      text-align: center;
+    }
+
+    .hoveri:hover {
+      opacity: 1.0;
+    }
+
+    a {
+      color: blueviolet;
     }
   </style>
 </head>
 
 <body>
-  
-  <section class="hero is-fullheight is-info is-bold">
-      <article id="message" style="position:absolute;margin-right: 10pt;margin-top: 10pt;margin-left: 10pt;width: calc(100% - 20pt);" class="message is-info">
-          <div class="message-header">
-            <p><strong>New on escherwd.me</strong></p>
-            <button class="delete" aria-label="delete" onclick="document.getElementById('message').setAttribute('class','message is-info is-hidden')"></button>
-          </div>
-          <div class="message-body">
-            escherTalks v2 is here. Create your account today. <a href="https://escherwd.github.io/escherTalks/">Go →</a>
-          </div>
-        </article>
-    <div class="hero-body" style="background: linear-gradient(45deg, #EFEA9B, #E27E8A, #A487BA,#53599C,#1D232E) 0% 0% / 300% 300%; animation: Animation 25s ease infinite;">
+
+  <section style="background: linear-gradient(45deg, rgba(218, 36, 255, 0.8), rgba(152, 52, 239, 0.8),rgba(75, 0, 224, 0.8)) 0% 0% / 300% 300%; animation: Animation 10s ease infinite;"
+    class="hero is-fullheight is-info is-bold">
+
+    <div class="hero-body">
       <div class="container has-text-centered">
-        <h1 class="title" title="@escherwd on snapchat">
-          <img src="img/escherwdWhite.png" alt="Bulma: a modern CSS framework based on Flexbox" width="222" height="37">
+        <h1 class="title tooltip" data-tooltip="@escherwd on snapchat">
+          <img src="img/escherwdWhite.png" alt="haha the logo is supposed to be here" width="222" height="37">
         </h1>
         <h2 class="subtitle">
           <nav class="tabs is-small is-centered">
             <div class="container">
               <ul>
                 <li>
-                  <a href="https://escherwd.github.io/apps" title="Apps">
+                  <a href="https://escherwd.github.io/apps">
                     <i class="fab fa-lg fa-app-store-ios"></i>
                   </a>
                 </li>
@@ -112,9 +128,62 @@
         </h2>
       </div>
     </div>
-
+    <a href="https://escherwd.github.io/escherTalks/" class="tooltip" data-tooltip="Go to escherTalks (talks.escherwd.com)"
+      id="message" style="position: relative;margin-right: 15pt;margin-bottom: 15pt;margin-left: 15pt;width: calc(100% - 30pt);bottom:0;height:15pt;opacity: 0.6;"
+      align="center">
+      <div style="position: absolute;width:calc(50% - 65pt);height:1pt;background-color:white;margin-top:9pt;"></div>
+      <img src="img/eTWhite.png" style="height:10pt;">
+      <div style="margin-left:calc(50% + 65pt);position: absolute;width:calc(50% - 65pt);height:1pt;background-color:white;margin-top:-10pt;"></div>
+    </a>
   </section>
-
+  <div align="center" style="background-color:white;min-height:100% !important;">
+    <div align="left" class="container" style="max-width:500pt;padding:20pt;">
+      <h1 class="is-size-4"><b>Welcome to the most <a class="tooltip" data-tooltip="🔥 absolutely fuego">🔥</a> website
+          on the net</b></h1>
+      <p>Escher WD makes stuff on the internet for people to use. Including (but not limited to), escherTalks, the RGMS
+        News App, and the Bells app. Many projects are in the pipeline so keep an eye out... If you have an idea for
+        something feel free to let me know with the links above.</p>
+      <br><br>
+      <div class="tile is-parent">
+        <div class="tile" align="center">
+          <a href="http://escherwd.github.io/escherTalks/" align="center" class="hoveri">
+            <img src="img/eTBlack.png" style="width:150pt;">
+          </a>
+          <br><br>
+        </div>
+        <div class="tile" align="center">
+          <a href="http://escherwd.github.io/rgmsnewsapp/" align="center" class="hoveri">
+            <img src="img/rgmsBanner.png" style="width:150pt;">
+          </a>
+        </div>
+      </div>
+      <br>
+      <p align="center">
+        <a class="button is-light" href="http://escherwd.github.io/apps/">All Projects</a>
+      </p>
+      <br><br>
+      <h1 class="is-size-4"><b>Contribute to escherwd.com and escherTalks</b></h1>
+      <p>Soon, the escherTalks iOS and Android apps will be coming out, and along with their release comes a plethora of new features. One of these is stickerpacks, and similar to iMessage, you can create and upload your own (Although here you don't have to pay $99/yr to do so). Below some links to documentation on these things.</p>
+      <ul>
+        <br>
+        <li><a class="tooltip" data-tooltip="Coming Soon">escherTalks Sticker Pack Guide</a></li>
+        <li><a class="tooltip" data-tooltip="Coming Soon">escherTalks Rooms Bot Guide</a></li>
+      </ul>
+      <br><br><br>
+      <p align="center" class="tooltip" data-tooltip="@escherwd">
+          <img  src="img/snap.svg" style="width:50pt;">
+      </p>
+      <br>
+    </div>
+    <footer class="footer" style="background-color: #1e1e1e;color:white;">
+      <div class="content has-text-centered">
+        <p>
+          <b>escherwd.com</b> as well as <b>escherTalks</b> by <a href="https://github.com/escherwd" >Escher WD</a>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. 
+        </p>
+      </div>
+    </footer>
+  </div>
 
 
 
