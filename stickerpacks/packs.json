@@ -21,19 +21,20 @@
             ]
         },
         {
-            "title": "Rabchuk Pack 2",
-            "description": "Another Rabchuk Sticker Pack! Inspired by r/abchuk.",
+            "title": "Violet and Cheeto Pack",
+            "description": "The official mascots of escherTalks come together for an exclusive stickerpack!",
             "icon": "http://escherwd.me/stickerpacks/icon-green.png",
             "stickers": [
-                "https://imgur.com/lw25IRQ.jpg",
-                "https://imgur.com/leuK6W2.jpg",
-                "https://imgur.com/i2kDQZF.jpg",
-                "https://imgur.com/68G3g7T.jpg",
-                "https://imgur.com/LgdNm2x.jpg",
-                "https://imgur.com/C2Zbs6B.jpg",
-                "https://imgur.com/emBxrvq.jpg",
-                "https://imgur.com/aIsoVkK.jpg",
-                "https://imgur.com/ElDDaME.jpg"
+                "http://escherwd.me/stickerpacks/dog_pack/img_1.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_2.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_3.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_4.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_5.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_6.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_7.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_8.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_9.png",
+                "http://escherwd.me/stickerpacks/dog_pack/img_10.png"
             ]
         }
     ]
