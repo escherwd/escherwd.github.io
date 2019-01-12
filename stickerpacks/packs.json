@@ -5,6 +5,7 @@
     "stickerpacks": [
         {
             "title": "Rabchuk Pack",
+            "id": "ewd001",
             "description": "A Rabchuk Sticker Pack! Inspired by r/abchuk.",
             "icon": "http://escherwd.github.io/stickerpacks/icon-rabchuk.png",
             "stickers": [
@@ -22,8 +23,9 @@
         },
         {
             "title": "Violet and Cheeto Pack",
+            "id": "ewd002",
             "description": "The official mascots of escherTalks come together for an exclusive stickerpack!",
-            "icon": "http://escherwd.github.io//stickerpacks/icon-dog.png",
+            "icon": "http://escherwd.github.io/stickerpacks/icon-dog.png",
             "stickers": [
                 "http://escherwd.github.io/stickerpacks/dog_pack/img_1.png",
                 "http://escherwd.github.io/stickerpacks/dog_pack/img_2.png",
