@@ -1,8 +1,8 @@
 {"featuredPackLists": [
     {
-        "image":"https://images.unsplash.com/photo-1545066165-d88af3f82681?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        "title": "Legit Packs",
-        "description": "The most legit packs you will ever witness",
+        "image":"https://i.imgur.com/aC3Z86c.jpg",
+        "title": "Escher's Packs",
+        "description": "The first stickerpacks on escherTalks, made by yours truly. Mostly dogs and Mr. Rabchuk, but what else could you really ask for.",
         "packs": [
             "https://escherwd.com/stickerpacks/packs.json#ewd001",
             "https://escherwd.com/stickerpacks/packs.json#ewd002"
