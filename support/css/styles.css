@@ -1,0 +1,40 @@
+.content {
+    margin: 20pt 40pt;
+    background: white;
+    padding: 10pt 20pt;
+    border-radius: 2pt;
+    z-index: 99;
+    max-width: 750pt;
+
+}
+
+.shadow {
+    box-shadow:  0pt 0pt 15pt rgba(0,0,0,0.1);
+}
+
+.heading {
+    margin-bottom: 0pt !important;
+    margin-top: 15pt;
+}
+
+.uk-card {
+    margin-bottom: 10pt;
+}
+
+.header {
+    background-color: white;
+    border-bottom-color: gainsboro;
+    border-bottom-width: 1pt;
+    border-bottom-style: dashed;
+}
+
+small {
+    color: grey;
+}
+
+pre {
+    background-color: #F8F8F8;
+    border-width: 1pt;
+    border-color: grey;
+    border-style: dashed !important;
+}

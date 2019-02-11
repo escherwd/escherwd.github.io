@@ -1,0 +1,214 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/uikit.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+	<title>escherTalks Support</title>
+</head>
+
+<body onload="setPage()" style="background-color:#F8F8F8;">
+	<nav class="uk-navbar-container" style="background-color:white;" uk-navbar>
+		<div class="uk-navbar-left">
+			<ul class="uk-navbar-nav">
+				<li><a href="#home"><img src="img/eTBlack.png" style="height:12pt;width:auto;margin: 24pt 15pt;"></a>
+				</li>
+				<li>
+					<a>Developers</a>
+					<div class="uk-navbar-dropdown">
+						<ul class="uk-nav uk-navbar-dropdown-nav">
+							<li><a href="#stickerpacks">Sticker Packs</a></li>
+							<li><a href="#bots">Room Bots</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</div>
+	</nav>
+	<div align="center">
+		<content id="home" style="display: none;">
+			<div align="left" class="content">
+				<div align="center">
+					<h2 class="heading"><b>escherTalks Platform</b></h2>
+					<small>Resources and Guides</small><br><br>
+				</div>
+				<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+					<div>
+						<div class="uk-card uk-card-default uk-card-body">
+							<h3 class="uk-card-title">Stickerpacks</h3>
+							<p>Learn how to create your own stickerpack repository for use on the escherTalks iOS and
+								Android App.</p>
+							<a class="uk-button uk-button-default" href="#stickerpacks">Go</a>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-primary uk-card-body">
+							<h3 class="uk-card-title">Bots</h3>
+							<p>With the addition of Rooms to escherTalks, bots can now be created to do all sorts of
+								things.
+							</p>
+							<a class="uk-button uk-button-default" href="#bots">Go</a>
+						</div>
+					</div>
+					<div>
+						<div class="uk-card uk-card-secondary uk-card-body">
+							<h3 class="uk-card-title">General Support</h3>
+							<p>Frequently asked questions and troubleshooting.</p>
+							<a class="uk-button uk-button-default" href="#faq">Go</a>
+						</div>
+					</div>
+				</div>
+				<br><br>
+				<div align="center">
+					<small>Coming soon</small><br>
+					<img height="40px" src="img/astore.svg">
+					<img style="height:44pt;width:auto;" src="img/gplay.png">
+				</div>
+			</div>
+		</content>
+		<content id="stickerpacks" style="display: none;">
+			<div class="header">
+				<div align="center">
+					<img src="img/stickerMock.png" style="width:80%;max-width:300pt;">
+				</div>
+			</div>
+			<div align="left" class="content">
+				<div align="center">
+					<h2 class="heading"><b>Sticker Packs</b></h2>
+					<small>Official Guide</small><br>
+				</div>
+				<p>Stickerpacks, a new feature to the upcoming escherTalks app, are an easy and fun way to express
+					yourself. escherTalks stickerpacks work similarly to iMessage or WhatsApp stickerpacks, whereas
+					users can create their own and share them. Where this differs however, is the way your stickers are
+					hosted.
+
+					<br><br>
+
+					With escherTalks stickerpacks, you pretty much run your own sticker store.</p>
+				<h4><b>1.&nbsp;&nbsp;How Sticker Repositories Work</b></h4>
+				<img width="100%" src="img/flowchart.png" style="opacity: 0.8;"><br>
+				<p>Here is the template for what the JSON repository file should look like:</p>
+				<pre class="prettyprint">
+{
+	"name": string,
+	"creator": string,
+	"social": string,
+	"stickerpacks": [
+		{
+		"title": string,
+		"id": string,
+		"description": string,
+		"icon": string,
+		"stickers": [
+			string, ...
+		]
+		}, ...
+	]
+}</pre>
+				<p>Here is an example of what my personal stickerpack repository looks like. The consistantly updated
+					version is hosted at <a
+						href="http://escherwd.com/stickerpacks/packs.json">escherwd.com/stickerpacks/packs.json</a> for
+					reference.</p>
+				<pre class="prettyprint">
+{
+	"name": "Escher's Sticker Repository",
+	"creator": "Escher WD",
+	"social": "@escherwd", // Your escherTalks username
+	"stickerpacks": [
+		{ 
+			"title": "Rabchuk Pack",
+			"id": "ewd001", // All IDs in your pack must be different
+			"description": "A Rabchuk Sticker Pack! Inspired by r/abchuk.",
+			"icon": "http://escherwd.github.io/stickerpacks/icon-rabchuk.png",
+			"stickers": [
+				"https://imgur.com/lw25IRQ.jpg",
+				"https://imgur.com/leuK6W2.jpg",
+				"https://imgur.com/i2kDQZF.jpg",
+				"https://imgur.com/68G3g7T.jpg",
+				"https://imgur.com/LgdNm2x.jpg",
+				"https://imgur.com/C2Zbs6B.jpg",
+				"https://imgur.com/emBxrvq.jpg",
+				"https://imgur.com/aIsoVkK.jpg",
+				"https://imgur.com/ElDDaME.jpg",
+				"https://imgur.com/DMMM7WS.jpg"
+			]
+		},
+		{
+			"title": "Violet and Cheeto Pack",
+			"id": "ewd002",
+			"description": "The official mascots of escherTalks come together for an exclusive stickerpack!",
+			"icon": "http://escherwd.github.io/stickerpacks/icon-dog.png",
+			"stickers": [
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_1.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_2.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_3.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_4.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_5.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_6.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_7.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_8.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_9.png",
+				"http://escherwd.github.io/stickerpacks/dog_pack/img_10.png"
+			]
+		}
+	]
+}		
+</pre>
+				<p>This example shows off two different ways of hosting the stickers themselves. In the "Rabchuk Pack",
+					all the stickers are located on imgur, which can be helpful for lightweight websites who don't want
+					to host the images. The second example has the stickers located in the same website. The way you
+					organize it is up to you, but hosting the images on your own site are easier to manage.<br><br>Icons
+					for both packs are hosted on my website as well, but it wouldn't be a problem if they were on imgur
+					as well.<br><br>Here is a screebshot of how my repository is organized, I would reccomend this way
+					but the locations of the files really don't matter. Creating a seperate folder for each pack is
+					suggested.</p>
+				<img width="100%" src="img/organization.png"><br>
+				<h4><b>2.&nbsp;&nbsp;Stickerpack Icons</b></h4>
+				<p>Stickerpack icons are important because they are the first thing the user sees before looking at your
+					pack. Icons should be simplistic and keep to minimal colors and gradients.
+					<br><br>
+					<div class="uk-alert-danger" uk-alert>
+						<p>When making your icons, never round the corners. The app takes care of that.</p>
+					</div>
+				</p>
+				<img width="100%" src="img/IconExample.png"><br>
+				<p>Icons should have a 4 x 3 size ratio. The size isn't super important, but try to keep it on the smaller side for faster loading times. My icons are all 90px by 120px.</p>
+				<div uk-alert>Supported formats are <b>.png</b>, <b>.jpg</b>, <b>.jpeg</b>, and <b>.gif</b></div>
+				<img width="100%" src="img/iconSizing.png"><br>
+				<h4><b>3.&nbsp;&nbsp;Stickers</b></h4>
+				<p>Stickers follow similar rules to the icons. Quality here though is definitely more important than small file sizes, as the user will only have to download these stickers once. Please note, escherTalks does nothing to manipulate the photos, so if you want shadows and borders around your stickers you will have to add them yourself. I would reccomend Sketch or Affinity Designer for this. </p>
+				<div uk-alert>Supported formats are <b>.png</b>, <b>.jpg</b>, <b>.jpeg</b>, and <b>.gif</b></div>
+				<p>All of my stickers fit into a 250px by 250px box, which is even a little on the small side. Here are some examples of my stickers:</p>
+				<img width="100%" src="img/StickersEx.png"><br>
+				<p>Stickers are really all up to you, I don't really have many rules to assert here, just keep it PG, I guess</p>
+				<h4><b>4.&nbsp;&nbsp;Publishing</b></h4>
+				<p>Stickers can be installed by your friends immidiately after you upload the JSON repository file with working image URLs. If anything is missing or an image URL isn't correct something might go wrong (I'm too lazy to really find out), so please make sure everything is correct.<br><br>
+				Inside the escherTalks app, under the Explore page, there is an 'All Packs' button. Here you can add your repository url (should end with .json) with the plus at the top right and begin to download the packs inside of it. For example, my repository url is <a
+				href="http://escherwd.com/stickerpacks/packs.json">http://escherwd.com/stickerpacks/packs.json</a>.<br><br>
+				You can also email a certain pack to me if you want it featured on the explore page, which would definitely boost your exposure. Users can add your repo from featured packs by clicking "More Packs by (insert name here)" at the bottom.</p><br><br>
+				<div align="center">
+						<a class="uk-button uk-button-default" href="mailto:escherwd@yahoo.com">Email Me</a><br><br><br>
+						good luck, lol
+				</div>
+			</div>
+		</content>
+		<content id="bots" style="display: none;"><div align="center">
+			<br><br>
+				🕒 Coming Soon
+		</div></content>
+		<content id="faq" style="display: none;"><div align="center">
+				<br><br>
+					🕒 Coming Soon
+			</div></content>
+	</div>
+</body>
+
+</html>
