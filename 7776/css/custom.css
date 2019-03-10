@@ -1,0 +1,47 @@
+.body {
+    background-image: url('../img/bg.gif');
+    background-color: navy;
+}
+
+.title_span {
+    max-width: 100% !important;
+}
+
+.footer {
+    margin-top: 50pt !important;
+    margin-bottom: 25pt;
+    padding-top:25pt;
+    padding-bottom: 42pt;
+    padding-left: 20pt;
+    padding-right: 20pt;
+    background-color: darkblue;
+}
+
+.page-header h1 {
+
+    color: mediumspringgreen !important;
+}
+
+.ewdLogo {
+    height:15pt;opacity: 0.5;
+}
+
+.ewdLogo:hover {
+    opacity: 1.0;
+}
+
+section  {
+    padding-top: 0pt !important;
+    margin-top: 0pt !important;
+}
+
+.img {
+    max-width:500pt;
+    border-style:solid;
+    border-width: 3pt;
+    border-color:green;
+}
+
+hr {
+    border-color: navy !important;
+}
