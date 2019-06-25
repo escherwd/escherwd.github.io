@@ -1,0 +1,39 @@
+{
+    "dogs": [
+        {
+            "name" : "Shiba Inu",
+            "url" : "https://en.wikipedia.org/wiki/Shiba_Inu",
+            "tags" : ["shibe","medium","japanese"]
+        },
+        {
+            "name" : "Pug",
+            "url" : "https://en.wikipedia.org/wiki/pug",
+            "tags" : ["snorts","small","european"]
+        },
+        {
+            "name" : "Chocolate Lab",
+            "url" : "https://en.wikipedia.org/wiki/Labrador_Retriever#Brown/Liver/Chocolate_Labradors",
+            "tags" : ["labrador","canadian","european","large","chocolate"]
+        },
+        {
+            "name" : "Welsh Corgi",
+            "url" : "https://en.wikipedia.org/wiki/Welsh_Corgi",
+            "tags" : ["uk","wales","small","welsh"]
+        },
+        {
+            "name" : "Pitbull",
+            "url" : "https://en.wikipedia.org/wiki/Pit_bull",
+            "tags" : ["terrier","medium","american"]
+        },
+        {
+            "name" : "French Bulldog",
+            "url" : "https://en.wikipedia.org/wiki/French_Bulldog",
+            "tags" : ["frenchie","france","small"]
+        },
+        {
+            "name" : "English Bulldog",
+            "url" : "https://en.wikipedia.org/wiki/Bulldog",
+            "tags" : ["muscular","england","small"]
+        }
+    ]
+}
