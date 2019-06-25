@@ -4,43 +4,50 @@
             "name" : "Shiba Inu",
             "url" : "https://en.wikipedia.org/wiki/Shiba_Inu",
             "tags" : ["shibe","medium","japanese"],
-            "image" : "http://www.veanimals.com/images/stories/dog/Shiba_Inu_face.jpg"
+            "image" : "http://www.veanimals.com/images/stories/dog/Shiba_Inu_face.jpg",
+            "post" : "https://thehappypuppysite.com/wp-content/uploads/2018/05/shiba-inu-header.jpg"
         },
         {
             "name" : "Pug",
             "url" : "https://en.wikipedia.org/wiki/pug",
             "tags" : ["snorts","small","european"],
-            "image" : "https://i1.wp.com/alldogtags.com/wp-content/uploads/2015/03/Pug-Tan-Dog-Tag-ID-Image.jpg?resize=100%2C100&ssl=1"
+            "image" : "https://i1.wp.com/alldogtags.com/wp-content/uploads/2015/03/Pug-Tan-Dog-Tag-ID-Image.jpg?resize=100%2C100&ssl=1",
+            "post" : "https://upload.wikimedia.org/wikipedia/commons/6/6f/Pug_-_1_year_Old.jpg"
         },
         {
             "name" : "Chocolate Lab",
             "url" : "https://en.wikipedia.org/wiki/Labrador_Retriever#Brown/Liver/Chocolate_Labradors",
             "tags" : ["labrador","canadian","european","large","chocolate"],
-            "image" : "http://www.moonshinelabs.com/wp-content/uploads/2019/06/3-wks-Ms-Lemon-100x100_t.jpg"
+            "image" : "http://www.moonshinelabs.com/wp-content/uploads/2019/06/3-wks-Ms-Lemon-100x100_t.jpg",
+            "post" : "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lab-1540456890.jpg?resize=480:*"
         },
         {
             "name" : "Welsh Corgi",
             "url" : "https://en.wikipedia.org/wiki/Welsh_Corgi",
             "tags" : ["uk","wales","small","welsh"],
-            "image" : "https://i2.feedspot.com/5030339.jpg?t=1560429402"
+            "image" : "https://i2.feedspot.com/5030339.jpg?t=1560429402",
+            "post" : "https://dbw4iivs1kce3.cloudfront.net/680x390/2014/06/know-your-breeds-welsh-corgi-2014.jpg"
         },
         {
             "name" : "Pitbull",
             "url" : "https://en.wikipedia.org/wiki/Pit_bull",
             "tags" : ["terrier","medium","american"],
-            "image" : "https://upload-2.dogzer.net/image/5-_small-6609-blog--.jpg?1440000362"
+            "image" : "https://upload-2.dogzer.net/image/5-_small-6609-blog--.jpg?1440000362",
+            "post" : "https://bowwowinsurance.com.au/wp-content/uploads/2018/10/pitbull-puppy-with-stick-in-mouth-standing-outside-in-park.jpg"
         },
         {
             "name" : "French Bulldog",
             "url" : "https://en.wikipedia.org/wiki/French_Bulldog",
             "tags" : ["frenchie","france","small"],
-            "image" : "http://frenchbulldognews.com/attachments/usa-french-bulldog-rescue-network/12431d1539536576t-rubus-french-bulldog-available-adoption-kentucky-rubus-jpg"
+            "image" : "http://frenchbulldognews.com/attachments/usa-french-bulldog-rescue-network/12431d1539536576t-rubus-french-bulldog-available-adoption-kentucky-rubus-jpg",
+            "post" : "https://cdn.shopify.com/s/files/1/0598/4081/products/Frenchie-Bulldog-dog-harness-hoodie-ss19-media-batch1-0075.jpg?v=1559875734"
         },
         {
             "name" : "English Bulldog",
             "url" : "https://en.wikipedia.org/wiki/Bulldog",
             "tags" : ["muscular","england","small"],
-            "image" : "https://s3.amazonaws.com/cutepuppytime/wp-content/uploads/2018/10/25121927/English-Bulldog-Batman-100x100.jpg"
+            "image" : "https://s3.amazonaws.com/cutepuppytime/wp-content/uploads/2018/10/25121927/English-Bulldog-Batman-100x100.jpg",
+            "post" : "https://thehappypuppysite.com/wp-content/uploads/2018/06/english-bulldog-temperament-header.jpg"
         }
     ]
 }
