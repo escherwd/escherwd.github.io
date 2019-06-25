@@ -3,37 +3,44 @@
         {
             "name" : "Shiba Inu",
             "url" : "https://en.wikipedia.org/wiki/Shiba_Inu",
-            "tags" : ["shibe","medium","japanese"]
+            "tags" : ["shibe","medium","japanese"],
+            "image" : "http://www.veanimals.com/images/stories/dog/Shiba_Inu_face.jpg"
         },
         {
             "name" : "Pug",
             "url" : "https://en.wikipedia.org/wiki/pug",
-            "tags" : ["snorts","small","european"]
+            "tags" : ["snorts","small","european"],
+            "image" : "https://i1.wp.com/alldogtags.com/wp-content/uploads/2015/03/Pug-Tan-Dog-Tag-ID-Image.jpg?resize=100%2C100&ssl=1"
         },
         {
             "name" : "Chocolate Lab",
             "url" : "https://en.wikipedia.org/wiki/Labrador_Retriever#Brown/Liver/Chocolate_Labradors",
-            "tags" : ["labrador","canadian","european","large","chocolate"]
+            "tags" : ["labrador","canadian","european","large","chocolate"],
+            "image" : "http://www.moonshinelabs.com/wp-content/uploads/2019/06/3-wks-Ms-Lemon-100x100_t.jpg"
         },
         {
             "name" : "Welsh Corgi",
             "url" : "https://en.wikipedia.org/wiki/Welsh_Corgi",
-            "tags" : ["uk","wales","small","welsh"]
+            "tags" : ["uk","wales","small","welsh"],
+            "image" : "https://i2.feedspot.com/5030339.jpg?t=1560429402"
         },
         {
             "name" : "Pitbull",
             "url" : "https://en.wikipedia.org/wiki/Pit_bull",
-            "tags" : ["terrier","medium","american"]
+            "tags" : ["terrier","medium","american"],
+            "image" : "https://upload-2.dogzer.net/image/5-_small-6609-blog--.jpg?1440000362"
         },
         {
             "name" : "French Bulldog",
             "url" : "https://en.wikipedia.org/wiki/French_Bulldog",
-            "tags" : ["frenchie","france","small"]
+            "tags" : ["frenchie","france","small"],
+            "image" : "http://frenchbulldognews.com/attachments/usa-french-bulldog-rescue-network/12431d1539536576t-rubus-french-bulldog-available-adoption-kentucky-rubus-jpg"
         },
         {
             "name" : "English Bulldog",
             "url" : "https://en.wikipedia.org/wiki/Bulldog",
-            "tags" : ["muscular","england","small"]
+            "tags" : ["muscular","england","small"],
+            "image" : "https://s3.amazonaws.com/cutepuppytime/wp-content/uploads/2018/10/25121927/English-Bulldog-Batman-100x100.jpg"
         }
     ]
 }
