@@ -1,0 +1,82 @@
+/* Declaritive things */
+
+@font-face {
+    font-family: berkshire;
+    src: url(../fonts/berkshireswash-regular.ttf);
+  }
+
+@font-face {
+    font-family: burlington;
+    src: url(../fonts/SF_Burlington_Script_Italic.ttf);
+  }
+
+/* Custom styles */
+
+q {
+    font-size: 40pt;
+    font-family: burlington;
+    padding-right: 10pt;
+}
+
+.e-card {
+    margin-bottom: 20pt;
+}
+
+.e-nav {
+    padding: 16pt 20pt 1pt 20pt;
+}
+
+.e-post {
+    padding-top: 40pt;
+    color: white;
+}
+
+.e-nav .e-title {
+    font-size: 20pt;
+}
+
+.e-sponsor {
+    max-width: 184px;
+}
+
+.e-body {
+    max-width: 600pt;
+    padding-bottom: 40pt;
+}
+
+.e-footer {
+    padding: 40pt;
+    background-color: #303742;
+    color: gray;
+}
+
+.e-column {
+    padding-top: 40pt;
+}
+
+.e-by {
+    color: #66758c;
+    font-style: italic;
+}
+
+.e-author-card {
+    background-color: #303742;
+    color: white;
+    border: none;
+    border-radius: 4pt;
+}
+
+.e-blog-item-image {
+    max-height: 100pt;
+}
+
+.e-title {
+    color: whitesmoke;
+    font-family: berkshire;
+}
+
+/* Overriding styles */
+
+.hero-body {
+    margin-left: 20pt;
+}
