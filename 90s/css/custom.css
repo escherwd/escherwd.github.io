@@ -1,0 +1,30 @@
+.body-bg {
+    background-image: url('../webimages/me.png');
+    background-color: black;
+    background-size: 20pt;
+}
+
+.brand img {
+    height: 18pt;
+    color: green;
+}
+
+.m {
+    height: 40pt;
+}
+
+.s {
+    height: 20pt;
+}
+
+.l {
+    height: 100pt;
+}
+
+.in {
+    padding: 0pt 20pt
+}
+
+.m-s {
+    margin: 5pt;
+}
